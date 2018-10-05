@@ -2,6 +2,12 @@
 
 A demonstration on how to load and ground the attribute can be found at : Demo.ipynb
 
+Image -->  'Boy' Attribute -- > 'Lady' Attribute
+<p float="center">
+  <img src="demo_attr.png" width="400" />
+</p>
+
+
 For a clarification of the file system:
 
 #### Train_attr_attention_embedding.py:
