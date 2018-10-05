@@ -1,0 +1,10 @@
+man
+woman
+lady
+female
+boy
+girl
+kid
+child
+young
+elderly
