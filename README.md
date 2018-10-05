@@ -1,5 +1,6 @@
 # attribute_grounding
-Gender/Age attribute grounding using unsupervised manner.
+
+A demonstration on how to load and ground the attribute can be found at : Demo.ipynb
 
 For a clarification of the file system:
 
