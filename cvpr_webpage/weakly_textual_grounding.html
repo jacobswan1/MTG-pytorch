@@ -1,0 +1,253 @@
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+    <title>Modularized Textual Grounding for Counterfactual Resilience -- APG</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script type="text/javascript" src="jquery.mlens-1.0.min.js"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+    <style>
+        body {
+            font-family: 'Open-Sans', sans-serif;
+            font-weight: 300;
+            background-color: #CDCDCD;
+        }
+
+        .content {
+            width: 800px;
+            padding: 25px 50px;
+            margin: 25px auto;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #999;
+            border-radius: 15px;
+        }
+
+        .contentblock {
+            width: 950px;
+            margin: 0 auto;
+            padding: 0;
+            border-spacing: 25px 0;
+        }
+
+        .contentblock td {
+            background-color: #fff;
+            padding: 25px 50px;
+            vertical-align: top;
+            box-shadow: 0px 0px 10px #999;
+            border-radius: 15px;
+        }
+
+        a,
+        a:visited {
+            color: #224b8d;
+            font-weight: 300;
+        }
+
+        #authors {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #conference {
+            text-align: center;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        #authors a {
+            margin: 0 10px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 35px;
+            font-weight: 300;
+        }
+
+        h2 {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+        code {
+            display: block;
+            padding: 10px;
+            margin: 10px 10px;
+        }
+
+        p {
+            line-height: 25px;
+            text-align: justify;
+        }
+
+        p code {
+            display: inline;
+            padding: 0;
+            margin: 0;
+        }
+
+        #teasers {
+            margin: 0 auto;
+        }
+
+        #teasers td {
+            margin: 0 auto;
+            text-align: center;
+            padding: 5px;
+        }
+
+        #teasers img {
+            width: 250px;
+        }
+
+        #results img {
+            width: 133px;
+        }
+
+        #seeintodark {
+            margin: 0 auto;
+        }
+
+        #sift {
+            margin: 0 auto;
+        }
+
+        #sift img {
+            width: 250px;
+        }
+
+        .downloadpaper {
+            padding-left: 20px;
+            float: right;
+            text-align: center;
+        }
+
+        .downloadpaper a {
+            font-weight: bold;
+            text-align: center;
+        }
+
+        #demoframe {
+            border: 0;
+            padding: 0;
+            margin: 0;
+            width: 100%;
+            height: 340px;
+        }
+
+        #feedbackform {
+            border: 1px solid #ccc;
+            margin: 0 auto;
+            border-radius: 15px;
+        }
+
+        #eyeglass {
+            height: 530px;
+        }
+
+        #eyeglass #wrapper {
+            position: relative;
+            height: auto;
+            margin: 0 auto;
+            float: left;
+            width: 800px;
+        }
+
+        #mitnews {
+            font-weight: normal;
+            margin-top: 20px;
+            font-size: 14px;
+            width: 220px;
+        }
+
+        #mitnews a {
+            font-weight: normal;
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+
+
+</head>
+
+<body>
+
+    <div class="content">
+        <h1>Modularized Textual Grounding for Counterfactual Resilience</h1>
+
+        <p id="authors">
+            <a href="http://www.public.asu.edu/~zfang29/">Zhiyuan Fang</a>
+            <a href="https://www.ics.uci.edu/~skong2/">Shu Kong</a>
+            <a href="https://www.ics.uci.edu/~fowlkes/">Charless Fowlkes</a>
+            <a href="https://yezhouyang.engineering.asu.edu/">Yezhou Yang</a><br>
+            <center><h3><strong> ASU Active Perception Group </strong></h3></center> 
+        </p>
+        <p>
+            <center>
+			<img src="images/abstract.png" width="640px" border="0">
+		</iframe>
+            </center>
+        </p>
+
+
+        <div class="downloadpaper">
+            <br>
+            <a href="files/paper.pdf"><img src="images/paper.png" width="160px" border="2">
+                <p><a href="files/paper.pdf">Download Paper</a></p>
+                <p><a href="https://github.com/ASU-Active-Perception-Group/attribute_grounding" target="_blank">Download Source Code</a></p>
+                <!-- <p><strong><a href="https://github.com/metalbubble/TRN-pytorch" target="_blank">Download Source Code</a></strong></p> -->
+        </div>
+
+        <p>Computer Vision applications often require a textual grounding module with precision, interpretability, and resilience to counterfactual inputs/queries. To achieve high grounding precision, current textual grounding methods heavily rely on large-scale training data with manual annotations at the pixel level. Such annotations are expensive to obtain and thus severely narrow the model’s scope of real-world applications. Moreover, most of these methods sacrifice interpretability, generalizability, and they neglect the importance of being resilient to counterfactual inputs. To address these issues, we propose a visual grounding system which is 1) end-to-end trainable in a weakly supervised fashion with only image-level annotations, and 2) counterfactually resilient owing to the modular design. Specifically, we decompose textual descriptions into three levels: entity, semantic attribute, color information, and perform compositional grounding progressively. We validate our model through a series of experiments and demonstrate its improvement over the state-of-the-art methods. In particular, our model's performance not only surpasses other weakly/un-supervised methods and even approaches the strongly supervised ones, but also is interpretable for decision making and performs much better in face of counterfactual classes than all the others.</p>
+
+
+
+        <br clear="all">
+    </div>
+
+
+    <div class="content" id="overview">
+
+        <h2>Weakly Supervised Training Architecture</h2>
+
+        <p>Illustrative diagram for our entity grounding module (left) and the whole textual grounding system (right). The textual phrase is first decomposed into sub-elements, e.g., 'older man in blue' can be parsed to 'person' category with 'older man' and 'blue' to be it's attributes, and later fed into corresponding sub-module. The bounding boxes are generated and selected based upon the merged attention maps. We train the entity/semantic attribute grounding module in a weakly supervised fashion with a attention mechanism. The semantic attribute module also adopt similar architecture of entity module, however with a dictionary learning loss.</p>
+        <p align="center"><img src="images/pipeline.png" height="260", border=""></p>
+    </div>
+
+
+    <div class="content" id="overview">
+
+        <h2>Counterfactual Textual Grounding Dataset</h2>
+        <p align="center"><img src="images/dataset.png" height="260", border="1"></p>
+    </div>
+
+   <div class="content" id="overview">
+
+        <h2>Intermediate Output</h2>
+        <p align="center"><img src="images/result1.png" height="430", border="1"></p>
+    </div>
+
+    <div class="content" id="references">
+
+        <h2>Reference</h2>
+
+        <p>Z. Fang, S. Kong, C. Fowlkes, and Y. Yang. Modularized Textual Grounding for Counterfactual Resilience.
+                [<a href="paper/paper.pdf">Download Paper</a>]
+        </p>
+
+        <code>
+            @article{fang2018modularizedtextual,<br>
+            &nbsp;&nbsp;title={Modularized Textual Grounding for Counterfactual Resilience},<br>
+            &nbsp;&nbsp;author={Fang, Zhiyuan and Kong, Shu and Fowlkes, Charless and Yang, Yezhou},<br>
+            &nbsp;&nbsp;journal={},<br>
+            &nbsp;&nbsp;year={2018}<br>
+            }
+        </code>
+
+        <p><strong>Acknowledgement</strong>: <br>The support of the National Science Foundation under the Robust Intelligence Program (1816039 and 1750082).</p>
+    </div>
+
+</body>
+
+</html>
