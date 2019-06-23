@@ -28,19 +28,19 @@ Attention model for attribute grounding, it's based on a pre-trained Res-50 Netw
   <li>bilinear pooling module: Implemented from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">Compact Bilinear Pooling</a>. Faster Fourier Transform module is needed before using. Download and install it from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">here</a> by running:
  <pre>pip3 install pytorch_fft</pre>
 </li>
-  <li>resnet: We modified the last fully connected layer from 2048d to 256d to a more compact representation.</li>
-  <li>nms/roi_align module: Not neccesary in this time. (For entity grounding and bbox detection.)</li>
+  <li><pre>resnet</pre>: We modified the last fully connected layer from 2048d to 256d to a more compact representation.</li>
+  <li><pre>nms/roi_align module</pre>: Not neccesary in this time. (For entity grounding and bbox detection.)</li>
 </ul></pre>
 
 In order to re_train our framework, several things might be modified:
-<pre> parser.py /<pre>
+<pre> parser.py </pre>
 
 In parser.py, img_path/annotations need to be changed to your local coco_2017_train directory:
 <pre> /path/to/your/local/coco17/image path/annotations/ </pre>
 
 Argument resume is for loading pre-trained overall model.
 
-## Download:
+## Download
 To download the pre-trained unsupervised network:
   <ul>
     <li><a href="https://drive.google.com/open?id=10syFqPtkUp4frDV6YEQbgbKs9dUdfTB_">Res50</a> can be found it here.</li>
