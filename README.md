@@ -1,24 +1,30 @@
-# Still Under Updating and Building
-# attribute_grounding
+# Visual Cues Grounding Through Weak Suppervision
+
+<i>PyTorch</i> implementation of **[Modularized Textual Grounding for Counterfactual Resilience
+](http://openaccess.thecvf.com/content_CVPR_2019/papers/Fang_Modularized_Textual_Grounding_for_Counterfactual_Resilience_CVPR_2019_paper.pdf)** , CVPR 2019.
+
+## Introduction
+We propose a cross-modal grounding method through weak supervision.
+
+![architecture](./results/architecture.png "Ground Visual Cue Through a Top-down Guided Design.")
 
 A demonstration on how to load and ground the attribute can be found at : Demo.ipynb
 
-Image -->  'Boy' Attribute -- > 'Lady' Attribute
+Image -->  <em>'Boy'</em> Attribute -- > <em>'Lady'</em> Attribute
 <p float="center">
   <img src="demo_attr.png" width="400" />
 </p>
 
 
-For a clarification of the file system:
+## Usage
+Training script for attribute grounding: <pre>Train_attr_attention_embedding.py</pre>
 
-#### Train_attr_attention_embedding.py:
-<pre>Training script for attribute grounding.</pre>
+Attention model for attribute grounding, it's based on a pre-trained Res-50 Network on person gender/age classification network:
+<pre> /Models/Model7.py</pre>
 
-#### /Models/Model7.py:
-<pre>Attention model for attribute grounding, it's based on a pre-trained Res-50 Network on person gender/age classification network.</pre>
+Contains all the neccesary dependencies for our framework, it consists of:
+<pre>/lib/</pre>
 
-#### /lib/:
-<pre>Contains all the neccesary dependencies for our framework, it consists of: 
 <ul>
   <li>bilinear pooling module: Implemented from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">Compact Bilinear Pooling</a>. Faster Fourier Transform module is needed before using. Download and install it from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">here</a> by running:
  <pre>pip3 install pytorch_fft</pre>
