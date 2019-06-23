@@ -33,10 +33,10 @@ Attention model for attribute grounding, it's based on a pre-trained Res-50 Netw
 </ul></pre>
 
 In order to re_train our framework, several things might be modified:
-<pre> parser.py /pre>
+<pre> parser.py /<pre>
 
 In parser.py, img_path/annotations need to be changed to your local coco_2017_train directory:
-<pre>/path/to/your/local/coco17/image path/annotations/</pre>
+<pre> /path/to/your/local/coco17/image path/annotations/ </pre>
 
 Argument resume is for loading pre-trained overall model.
 
