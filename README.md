@@ -3,12 +3,14 @@
 <i>PyTorch</i> implementation of **[Modularized Textual Grounding for Counterfactual Resilience
 ](http://openaccess.thecvf.com/content_CVPR_2019/papers/Fang_Modularized_Textual_Grounding_for_Counterfactual_Resilience_CVPR_2019_paper.pdf)** , CVPR 2019.
 
+Qualitative grounding results can be found in our **[webpage](http://www.public.asu.edu/~zfang29/textual_grounding_cvpr2019/website.html)**.
+
 ## Introduction
 We propose a cross-modal grounding method through weak supervision.
 
 ![architecture](./results/architecture.png "Ground Visual Cue Through a Top-down Guided Design.")
 
-A demonstration on how to load and ground the attribute can be found at : Demo.ipynb
+A demonstration on how to load and ground the attribute can be found at : <b>Demo.ipynb</b>
 
 Image -->  <em>'Boy'</em> Attribute -- > <em>'Lady'</em> Attribute
 <p float="center">
