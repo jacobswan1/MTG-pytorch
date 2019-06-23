@@ -28,8 +28,8 @@ Attention model for attribute grounding, it's based on a pre-trained Res-50 Netw
   <li>bilinear pooling module: Implemented from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">Compact Bilinear Pooling</a>. Faster Fourier Transform module is needed before using. Download and install it from <a href="https://github.com/DeepInsight-PCALab/CompactBilinearPooling-Pytorch">here</a> by running:
  <pre>pip3 install pytorch_fft</pre>
 </li>
-  <li><pre>resnet</pre>: We modified the last fully connected layer from 2048d to 256d to a more compact representation.</li>
-  <li><pre>nms/roi_align module</pre>: Not neccesary in this time. (For entity grounding and bbox detection.)</li>
+  <li><em>resnet</em>: We modified the last fully connected layer from 2048d to 256d to a more compact representation.</li>
+  <li><em>nms/roi_align module</em>: Not neccesary in this time. (For entity grounding and bbox detection.)</li>
 </ul></pre>
 
 In order to re_train our framework, several things might be modified:
