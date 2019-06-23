@@ -15,6 +15,13 @@ Image -->  <em>'Boy'</em> Attribute -- > <em>'Lady'</em> Attribute
   <img src="demo_attr.png" width="400" />
 </p>
 
+## Requirements
+1. <i>PyTorch</i> 0.4.
+2. Python 3.6.
+3. FFT package.
+
+## Dataset
+Weakly trained on both COCO or Flickr 30k.
 
 ## Usage
 Training script for attribute grounding: <pre>Train_attr_attention_embedding.py</pre>
